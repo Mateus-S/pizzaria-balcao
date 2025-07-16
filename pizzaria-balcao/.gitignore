@@ -1,0 +1,61 @@
+# Build results
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / Visual Studio
+.vscode/
+.vs/
+.idea/
+
+# Logs
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# ASP.NET Secrets
+secrets.json
+
+# EF Core migrations folders
+Migrations/
+
+# SQLite and other local DBs
+*.db
+*.db-shm
+*.db-wal
+
+# Blazor / WASM specific
+wwwroot/lib/
+node_modules/
+dist/
+*.gz
+*.br
+
+# LibMan
+libman.json
+wwwroot/lib/
+
+# Others
+.env
+.env.*
+*.bak
+
+# Evita versionar arquivos do Bootstrap baixados localmente
+pizzaria.WEB/wwwroot/lib/
+
+# Outros arquivos estáticos que não devem ser versionados
+pizzaria.WEB/wwwroot/sample-data/
+

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Pizzaria.Infrastructure.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+
+builder.Services.AddDbContext<PizzariaDbContext>(options =>
+    options.UseSqlite("Data Source=pizzaria.db"));
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
